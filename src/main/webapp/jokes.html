@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Our cool jokes</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+    <center>
+        <h1>Lots of cool jokes</h1>
+        <h3>OPS: Audio on</h3>
+        <audio id="laugh">
+            <source src="sounds/laugh.mp3" type="audio/mpeg">
+        </audio>
+        
+        <audio id="laugh2">
+            <source src="sounds/laugh2.mp3" type="audio/mpeg">
+        </audio>
+        <br>
+        <button id="back">Go back</button>
+        <br><br>
+        <div id="div">
+
+            <input id="jokeId" type="number" placeholder="Enter a joke ID">
+            <button id="getJoke">Fetch</button><br><br>
+            <button id="getRandom">Get Random Joke</button>
+
+            <br><br> 
+            <b id="jokeTxt"></b>
+            <p id="txt"></p>
+            <br>
+
+            <table id="table" class="table">
+                <thead>
+                    <tr>                
+                        <th>Id</th>
+                        <th>Joke</th>
+                        <th>Type</th>
+                        <th>Rating</th>
+                    </tr>
+                </thead>
+                <tbody id="tablebody">
+                </tbody>
+            </table>
+            <br>
+        </div>
+        <script src="jokesjs.js"></script>
+    </center>
+</body>
+</html>

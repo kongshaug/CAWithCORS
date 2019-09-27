@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Our cars for sale</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+    <center>
+        <br><br>
+        <h1>OUR CARS FOR SALE</h1>
+        <br>
+        <button id="back">Go back</button>
+        <br><br>
+        Filter by: <input id="input" placeholder="Enter here">
+        <button id="filterYear">Filter year</button>
+        <button id="filterModel">Filter model</button>
+        <button id="filterMake">Filter make</button>
+        <button id="filterPrice">Filter price</button>
+        <br><br>
+        Sort by: <select id = "dropdown">
+            <option value = "make">Make</option>
+            <option value = "model">Model</option>
+            <option value = "price">Price</option>
+            <option value = "year">Year</option>
+        </select>    
+        <button id="sort">Sort cars</button>
+        <br><br>
+        <button id="getall">Get all cars</button>
+        <br><br><br><br>
+        <table id="table" class="table">
+            <thead>
+                <tr>                
+                    <th>Id</th>
+                    <th>Year</th>
+                    <th>Make</th>
+                    <th>Model</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody id="tablebody">
+            </tbody>
+        </table>
+        <script src="carsjs.js"></script>
+    </center>
+    </body>
+</html>
